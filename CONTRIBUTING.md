@@ -17,7 +17,7 @@ Esta guía explica cómo participar de forma ordenada en cualquiera de nuestros 
     - [🌱 Tu primera contribución](#-tu-primera-contribución)
     - [📝 Mejorar la documentación](#-mejorar-la-documentación)
   - [🔧 Flujo de trabajo con Git](#-flujo-de-trabajo-con-git)
-    - [Paso a paso](#paso-a-paso)
+    - [🔁 Paso a paso para subir tus cambios](#-paso-a-paso-para-subir-tus-cambios)
     - [🌿 Nomenclatura de branches](#-nomenclatura-de-branches)
   - [💻 Estándares de código](#-estándares-de-código)
     - [🐍 Python](#-python)
@@ -94,7 +94,7 @@ Si encuentras algo confuso, incompleto o desactualizado, puedes abrir un Pull Re
 En nuestros proyectos seguimos el modelo **Fork + Pull Request**.  
 Ningún cambio se realiza directamente sobre la rama `main`.
 
-### Paso a paso
+### 🔁 Paso a paso para subir tus cambios
 
 1️⃣ Haz fork del repositorio desde GitHub
 
@@ -137,7 +137,11 @@ git rebase upstream/main
 git push origin feat/nombre-de-tu-feature
 ```
 
-8️⃣ Abre un Pull Request desde tu fork hacia la rama `main` del repositorio original. Asegúrate de seguir el formato de mensajes de commit y de describir claramente los cambios que realizaste.
+8️⃣ Ve al repositorio original en GitHub y abre un Pull Request desde tu rama hacia `main` utilizando la **plantilla de Pull Request**.
+
+9️⃣ Completa la información solicitada en la plantilla y envía tu PR para revisión.
+
+
 
 ### 🌿 Nomenclatura de branches
 
@@ -200,7 +204,7 @@ Usamos [Conventional Commits](https://www.conventionalcommits.org/es/). El forma
     ```bash
     git commit -m "feat(auth): agregar login con Google"
     ```
-    
+
     👉 Aquí usamos `feat` porque añadimos una nueva funcionalidad.
 
     👉 El alcance `(auth)` indica que el cambio está en el sistema de autenticación.
@@ -225,7 +229,7 @@ Usamos [Conventional Commits](https://www.conventionalcommits.org/es/). El forma
    ```
 
     👉 Usamos `docs` porque el cambio es en la documentación.
-    
+
     👉 La descripción `actualizar instrucciones de instalación en README` explica claramente qué se actualizó.
 
 4. **Refactorizar código:** Reorganizaste funciones sin cambiar la lógica ni añadir nuevas features.
