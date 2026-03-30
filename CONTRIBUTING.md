@@ -11,6 +11,7 @@ Esta guía explica cómo participar de forma ordenada en cualquiera de nuestros 
   - [Índice](#índice)
   - [📜 Código de conducta](#-código-de-conducta)
   - [🚀 ¿Cómo puedo contribuir?](#-cómo-puedo-contribuir)
+    - [🤓 Antes de empezar](#-antes-de-empezar)
     - [🐞 Reportar un bug](#-reportar-un-bug)
     - [✨ Sugerir una mejora o nueva funcionalidad](#-sugerir-una-mejora-o-nueva-funcionalidad)
     - [🌱 Tu primera contribución](#-tu-primera-contribución)
@@ -18,7 +19,7 @@ Esta guía explica cómo participar de forma ordenada en cualquiera de nuestros 
   - [🔧 Flujo de trabajo con Git](#-flujo-de-trabajo-con-git)
     - [Paso a paso](#paso-a-paso)
     - [🌿 Nomenclatura de branches](#-nomenclatura-de-branches)
-  - [Estándares de código](#estándares-de-código)
+  - [💻 Estándares de código](#-estándares-de-código)
     - [🐍 Python](#-python)
     - [JavaScript / otros](#javascript--otros)
   - [📝 Mensajes de commit](#-mensajes-de-commit)
@@ -40,9 +41,17 @@ Al participar en cualquiera de nuestros repositorios, actividades o espacios de 
 
 ## 🚀 ¿Cómo puedo contribuir?
 
+### 🤓 Antes de empezar
+
+Antes de comenzar a trabajar en un cambio o proponer una mejora, es importante seguir estos pasos:
+
+1. Verifica si ya existe un Issue relacionado.
+2. Si vas a trabajar en un Issue existente, comenta que lo tomarás.
+3. Espera confirmación de un **maintainer** si el cambio es grande.
+
 ### 🐞 Reportar un bug
 
-Antes de abrir un issue, revisa si ya existe uno similar. Si no lo encuentras, puedes crear uno siguiendo estos pasos:
+Si encontraste un error o comportamiento inesperado en alguno de nuestros proyectos:
 
 1. Ve a la pestaña **Issues** del repositorio correspondiente.
 2. Haz clic en **New Issue** y selecciona la plantilla **Bug report**.
@@ -56,9 +65,10 @@ Mientras más información proporciones, más fácil será reproducir y solucion
 
 Si tienes una idea para mejorar el proyecto o agregar una nueva funcionalidad:
 
-1. Abre un **Issue** usando la plantilla **Feature request**.
-2. Describe el problema que buscas resolver y la solución que propones.
-3. Espera la retroalimentación del equipo antes de comenzar a programar. Esto nos ayuda a evitar trabajo duplicado y a alinear las propuestas con los objetivos del proyecto.
+1. Ve a la pestaña **Issues** del repositorio correspondiente.
+2. Haz clic en **Issue** y selecciona la plantilla **Feature request**.
+3. Describe el problema que buscas resolver y la solución que propones.
+4. Espera la retroalimentación del equipo antes de comenzar a programar. Esto nos ayuda a evitar trabajo duplicado y a alinear las propuestas con los objetivos del proyecto.
 
 ---
 
@@ -141,10 +151,10 @@ Esta nomenclatura nos ayuda a identificar rápidamente el propósito de cada ram
 | Refactoring | `refactor/descripcion` | `refactor/modelo-de-usuario` |
 | Tests | `test/descripcion` | `test/cobertura-api-eventos` |
 
-> La descripcion de las branches pueden estar en español o en ingles, dependiendo del proyecto. Revisa el README.md del repositorio específico para confirmar el idioma preferido.
+> La descripción de las branches puede estar en español o en inglés, dependiendo del proyecto. Revisa el README.md del repositorio específico para confirmar el idioma preferido.
 ---
 
-## Estándares de código
+## 💻 Estándares de código
 
 ### 🐍 Python
 
