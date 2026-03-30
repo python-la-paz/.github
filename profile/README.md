@@ -71,7 +71,7 @@ Si quieres ser parte de la comunidad puedes:
 
 1️⃣ **Participa en nuestros eventos** creando tu cuenta en [nuestro portal de usuarios y eventos](https://user.pylapaz.org).
 
-2️⃣ **Únete a la comunidad** en [WhatsApp](https://chat.whatsapp.com/JNcZ1qy3lDZL61sAlJia0j) y [Discord](https://discord.com/invite/TV5tHvdUKt) para compartir y mantenerte al día.   
+2️⃣ **Únete a la comunidad** en [WhatsApp](https://chat.whatsapp.com/JNcZ1qy3lDZL61sAlJia0j) o [Discord](https://discord.com/invite/TV5tHvdUKt) para compartir y mantenerte al día.   
 
 3️⃣ **Contribuye a nuestros proyectos open source**, siempre hay espacio para aprender y aportar.
 
