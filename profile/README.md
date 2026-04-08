@@ -101,11 +101,13 @@ Este proceso nos ayuda a asegurar que las personas que se suman al equipo de vol
 ## 📬 Encuéntranos en redes
 
 [![Web](https://img.shields.io/badge/🌐_Web-pylapaz.org-3776ab?style=for-the-badge)](https://pylapaz.org)
-[![Twitter/X](https://img.shields.io/badge/X-@PythonLaPaz-000000?style=for-the-badge&logo=x)](https://twitter.com/PythonLaPaz)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-Únete_a_la_comunidad-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/JmcjxMqqH5NDmh5APFWahM)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-Únete_al_canal-30FF88?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsapp.com/channel/0029VaDM88y0rGiIRedFIj0S)
 [![Instagram](https://img.shields.io/badge/Instagram-@pythonlapaz-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/pythonlapaz/)
 [![Facebook](https://img.shields.io/badge/Facebook-PythonLaPaz-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://facebook.com/PythonLaPaz)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Python_La_Paz-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/company/python-la-paz)
 [![YouTube](https://img.shields.io/badge/YouTube-@pythonlapaz-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@pythonlapaz)
 [![TikTok](https://img.shields.io/badge/TikTok-@pythonlapaz-000000?style=for-the-badge&logo=tiktok)](https://www.tiktok.com/@pythonlapaz)
 [![Discord](https://img.shields.io/badge/Discord-Python_La_Paz-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/TV5tHvdUKt)
+[![Twitter/X](https://img.shields.io/badge/X-@PythonLaPaz-000000?style=for-the-badge&logo=x)](https://twitter.com/PythonLaPaz)
 [![Email](https://img.shields.io/badge/Email-hello@pylapaz.org-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hello@pylapaz.org)
