@@ -1,0 +1,20 @@
+# .github/ISSUE_TEMPLATE/config.yml
+
+blank_issues_enabled: false # Desactiva los issues en blanco para forzar el uso de tus plantillas
+
+contact_links:
+  - name: 💬 Comunidad en WhatsApp
+    url: https://chat.whatsapp.com/JmcjxMqqH5NDmh5APFWahM
+    about: Únete para consultas rápidas, noticias y networking con la comunidad local.
+
+  - name: 🎮 Servidor de Discord
+    url: https://discord.com/invite/TV5tHvdUKt
+    about: Ideal para soporte técnico detallado, voz y convivencia en proyectos específicos.
+
+  - name: 🎙️ Propón una Charla (Papercall)
+    url: https://www.papercall.io/pythonlapaz
+    about: ¿Quieres ser ponente en un MeetUp? Envía tu propuesta aquí.
+
+  - name: 🌐 Sitio Web Oficial
+    url: https://pylapaz.org
+    about: Conoce más sobre nuestra historia, eventos pasados y misión.
