@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://scontent.flpb3-1.fna.fbcdn.net/v/t39.30808-6/487036261_9616326481767547_5369185207502203394_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=2a1932&_nc_ohc=jiW0VSY_IDEQ7kNvwF7tTaq&_nc_oc=AdrzqCINX2M0u19GgfdfzqK1o7Y5lZEXV7te_88-SLO09xaB3jJ3uATltthTHqRY4vI&_nc_zt=23&_nc_ht=scontent.flpb3-1.fna&_nc_gid=tiVhoGZW9WV1pRHauSVGmQ&_nc_ss=7a3a8&oh=00_AfwPt0NsvBtBLXz3vYLJdPs6prVDv3q4pPAm0eaA0RlDLA&oe=69CF5909" alt="Python La Paz" width="100%"/>
+    <img src="banner.png" alt="Python La Paz" width="100%"/>
 </div>
 
 # Python La Paz 🐍❤️💚
