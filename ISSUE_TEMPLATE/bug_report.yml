@@ -1,0 +1,111 @@
+name: "🐞 Bug report"
+description: Reporta un problema o comportamiento inesperado
+title: "[BUG] "
+labels:
+  - bug
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Antes de abrir este issue, por favor verifica:
+
+        ✅ Buscaste si ya existe un issue similar (abierto o cerrado)  
+        ✅ Estás usando la versión más reciente del proyecto (branch main)  
+        ✅ El problema es reproducible y no fue un error puntual  
+
+        ⚠️ Si el bug involucra una vulnerabilidad de seguridad, **NO lo reportes aquí**.  
+        Envíalo directamente a **hello@pylapaz.org**
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severidad
+      description: ¿Qué tan grave es este bug?
+      options:
+        - 🔴 Crítico — el sistema falla completamente o hay pérdida de datos
+        - 🟠 Alto — una funcionalidad principal no funciona y no hay forma de evitarlo
+        - 🟡 Medio — una funcionalidad falla pero hay una forma alternativa de hacerlo
+        - 🟢 Bajo — es un problema menor, visual o de comportamiento inconsistente
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 🐛 Descripción del problema
+      description: Describe de forma clara y concisa qué está pasando.
+      placeholder: |
+        Ej: Al intentar crear un nuevo evento desde el panel de administración,
+        la página devuelve un error 500 y no guarda los datos.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 🔁 Pasos para reproducirlo
+      description: Lista los pasos necesarios para reproducir el error.
+      placeholder: |
+        1. Ir a '...'
+        2. Hacer clic en '...'
+        3. Ejecutar '...'
+        4. Ver el error
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_behavior
+    attributes:
+      label: 🛑 Comportamiento actual
+      description: ¿Qué es lo que está pasando?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: 🟢 Comportamiento esperado
+      description: ¿Qué debería pasar si el sistema funcionara correctamente?
+    validations:
+      required: true
+
+  - type: textarea
+    id: media
+    attributes:
+      label: 📷 Videos, capturas o logs
+      description: Agrega capturas, videos o logs del error.
+      render: text
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: ¿Con qué frecuencia ocurre?
+      options:
+        - Siempre - puedo reproducirlo en cada intento
+        - A veces - ocurre de forma intermitente
+        - Solo ocurrió una vez
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 🧰 Información del entorno
+      description: Proporciona información sobre tu entorno.
+      placeholder: |
+        Sistema Operativo: Windows 11 / macOS 14 / Ubuntu 22.04
+        Versión de Python: ejecuta `python --version`
+        Versión/Branch: main, v1.0.0
+        Navegador (si aplica): Chrome 120, Firefox 121
+        Dispositivo (si aplica): Android 13, iPhone iOS 17
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: 💡 Contexto adicional
+      description: |
+        ¿Algo más que nos ayude a entender o reproducir el problema?
+        Issues relacionados (#número), PRs, links o configuraciones especiales.
