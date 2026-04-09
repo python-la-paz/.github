@@ -1,0 +1,61 @@
+name: "✨ Feature request"
+description: Proponer una mejora o nueva funcionalidad
+title: "[FEATURE] Aquí un título descriptivo"
+labels:
+  - feature
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por ayudar a mejorar este proyecto ❤️
+
+        Antes de abrir este Issue, por favor verifica:
+
+        - 🔍 Buscaste si ya existe un issue similar (abierto o cerrado)
+        - 🔄 Estás usando la versión más reciente del proyecto
+        - 🔁 El problema es reproducible
+
+        ⚠️ **Problemas de seguridad no deben reportarse aquí.**  
+        Envíalos a: **hello@pylapaz.org**
+
+  - type: checkbox
+    id: catergory
+    attributes:
+      label: 🧩 Tipo de mejora
+      description: |
+        Marca con una X la categoría que mejor describe tu propuesta. 
+        Puedes marcar más de una.
+    options:
+      - label: 🛠️ Desarrollo - nueva funcionalidad o cambio en el código
+        value: new_feature
+      - label: 📄 Documentación - mejorar el README, guías, comentarios en código o ejemplos
+        value: documentation
+      - label: ♿ Accesibilidad - mejorar la experiencia para personas con discapacidad
+        value: accessibility
+      - label: ⚡ Rendimiento - optimización de velocidad, uso de memoria o recursos
+        value: performance
+      - label: 🎨 UI / UX - cambios en la interfaz o experiencia de usuario
+        value: ui_ux
+      - label: 🧪 Testing - agregar o mejorar pruebas automatizadas
+        value: testing
+      - label: 🔧 Infraestructura / DevOps - CI/CD, despliegue, configuración de entornos
+        value: devops
+      - label: 📚 Contenido - mejoras o correcciones en el contenido, como blogs, tutoriales o recursos educativos
+        value: content
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: ✨ Descripción de la propuesta
+      description: |
+        Describe de forma clara y concisa qué mejora propones. 
+        Explica el problema actual y cómo tu propuesta lo soluciona o mejora.
+      placeholder: |
+        Ejemplo:
+        Actualmente el proceso de registro es confuso para nuevos usuarios, 
+        propongo agregar un tutorial interactivo que guíe a los usuarios paso a paso.
+    validations:
+      required: true

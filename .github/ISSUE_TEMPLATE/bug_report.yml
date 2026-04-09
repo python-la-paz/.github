@@ -1,6 +1,6 @@
 name: "🐞 Bug report"
 description: Reporta un problema o comportamiento inesperado
-title: "[BUG] "
+title: "[BUG] Aquí un título descriptivo"
 labels:
   - bug
 
@@ -8,14 +8,16 @@ body:
   - type: markdown
     attributes:
       value: |
-        Antes de abrir este issue, por favor verifica:
+        Gracias por ayudar a mejorar este proyecto ❤️
 
-        ✅ Buscaste si ya existe un issue similar (abierto o cerrado)  
-        ✅ Estás usando la versión más reciente del proyecto (branch main)  
-        ✅ El problema es reproducible y no fue un error puntual  
+        Antes de abrir este Issue, por favor verifica:
 
-        ⚠️ Si el bug involucra una vulnerabilidad de seguridad, **NO lo reportes aquí**.  
-        Envíalo directamente a **hello@pylapaz.org**
+        - 🔍 Buscaste si ya existe un issue similar (abierto o cerrado)
+        - 🔄 Estás usando la versión más reciente del proyecto
+        - 🔁 El problema es reproducible
+
+        ⚠️ **Problemas de seguridad no deben reportarse aquí.**  
+        Envíalos a: **hello@pylapaz.org**
 
   - type: dropdown
     id: severity
@@ -23,10 +25,10 @@ body:
       label: Severidad
       description: ¿Qué tan grave es este bug?
       options:
-        - 🔴 Crítico — el sistema falla completamente o hay pérdida de datos
-        - 🟠 Alto — una funcionalidad principal no funciona y no hay forma de evitarlo
-        - 🟡 Medio — una funcionalidad falla pero hay una forma alternativa de hacerlo
-        - 🟢 Bajo — es un problema menor, visual o de comportamiento inconsistente
+        - 🔴 Crítico - el sistema falla completamente o hay pérdida de datos
+        - 🟠 Alto - una funcionalidad principal no funciona y no hay forma de evitarlo
+        - 🟡 Medio - una funcionalidad falla pero hay una forma alternativa de hacerlo
+        - 🟢 Bajo - es un problema menor, visual o de comportamiento inconsistente
     validations:
       required: true
 
@@ -34,18 +36,23 @@ body:
     id: description
     attributes:
       label: 🐛 Descripción del problema
-      description: Describe de forma clara y concisa qué está pasando.
+      description: |
+        Describe de forma clara y concisa qué está pasando. 
+        Una buena descripción responde: ¿qué?, ¿dónde?, ¿cuándo?
       placeholder: |
-        Ej: Al intentar crear un nuevo evento desde el panel de administración,
-        la página devuelve un error 500 y no guarda los datos.
+        Ejemplo:
+        Al intentar crear un nuevo evento desde el panel de administración
+        aparece un error 500 y los datos no se guardan.
     validations:
       required: true
 
   - type: textarea
     id: steps
     attributes:
-      label: 🔁 Pasos para reproducirlo
-      description: Lista los pasos necesarios para reproducir el error.
+      label: 🔁 Pasos para reproducir
+      description: |
+        Lista los pasos necesarios para reproducir el error. 
+        Cuanto más detallado, más fácil es reproducirlo y corregirlo
       placeholder: |
         1. Ir a '...'
         2. Hacer clic en '...'
@@ -57,30 +64,36 @@ body:
   - type: textarea
     id: current_behavior
     attributes:
-      label: 🛑 Comportamiento actual
-      description: ¿Qué es lo que está pasando?
+      label: 🔎 Comportamiento actual
+      description: ¿Qué ocurre actualmente?
     validations:
       required: true
 
   - type: textarea
     id: expected_behavior
     attributes:
-      label: 🟢 Comportamiento esperado
-      description: ¿Qué debería pasar si el sistema funcionara correctamente?
+      label: ✅ Comportamiento esperado
+      description: ¿Qué debería pasar si todo funcionara correctamente?
     validations:
       required: true
 
   - type: textarea
+    id: logs
+    attributes:
+      label: 📋 Logs o mensajes de error
+      description: Copia aquí el traceback o logs relevantes.
+      render: shell
+
+  - type: textarea
     id: media
     attributes:
-      label: 📷 Videos, capturas o logs
-      description: Agrega capturas, videos o logs del error.
-      render: text
+      label: 📷 Capturas o videos
+      description: Arrastra imágenes o videos aquí si ayudan a explicar el problema.
 
   - type: dropdown
     id: frequency
     attributes:
-      label: ¿Con qué frecuencia ocurre?
+      label: Frecuencia del problema
       options:
         - Siempre - puedo reproducirlo en cada intento
         - A veces - ocurre de forma intermitente
@@ -88,24 +101,49 @@ body:
     validations:
       required: true
 
-  - type: textarea
-    id: environment
+  - type: input
+    id: project_version
     attributes:
-      label: 🧰 Información del entorno
-      description: Proporciona información sobre tu entorno.
-      placeholder: |
-        Sistema Operativo: Windows 11 / macOS 14 / Ubuntu 22.04
-        Versión de Python: ejecuta `python --version`
-        Versión/Branch: main, v1.0.0
-        Navegador (si aplica): Chrome 120, Firefox 121
-        Dispositivo (si aplica): Android 13, iPhone iOS 17
+      label: Versión/Branch del proyecto
+      description: Ej. main, develop, v1.0.0
+      placeholder: main
     validations:
       required: true
+
+  - type: input
+    id: python_version
+    attributes:
+      label: Versión de Python
+      description: Ejecuta `python --version` para verificar tu versión de Python
+      placeholder: "3.11.4"
+
+  - type: input
+    id: os
+    attributes:
+      label: Sistema operativo
+      description: Ej. Windows 11 / macOS 14 / Ubuntu 22.04
+      placeholder: Windows 10
+
+  - type: input
+    id: browser
+    attributes:
+      label: Navegador (si aplica)
+      description: Ej. Chrome 122 / Firefox 124
+      placeholder: Chrome 122
+
+  - type: input
+    id: device
+    attributes:
+      label: Dispositivo (si aplica)
+      description: Ej. iPhone 14 / PC / Android 12
+      placeholder: PC
 
   - type: textarea
     id: additional_context
     attributes:
       label: 💡 Contexto adicional
       description: |
-        ¿Algo más que nos ayude a entender o reproducir el problema?
-        Issues relacionados (#número), PRs, links o configuraciones especiales.
+        Información extra que pueda ayudar a reproducir o entender el problema.
+        - Issues relacionados
+        - PRs
+        - configuraciones especiales
