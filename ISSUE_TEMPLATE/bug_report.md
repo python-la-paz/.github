@@ -1,9 +1,9 @@
 ---
-name: 🐞 Bug report
+name: "🐞 Bug report"
 about: Reporta un problema o comportamiento inesperado
 title: "[BUG] "
-labels: bug
-assignees: ""
+labels: ["bug"]
+assignees: []
 ---
 
 <!-- Antes de abrir este issue, por favor verifica:
