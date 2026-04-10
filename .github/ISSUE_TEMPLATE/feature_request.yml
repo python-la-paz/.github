@@ -35,23 +35,23 @@ body:
       description: |
         Marca con la categoría que mejor describe tu propuesta. 
         Puedes marcar más de una.
-    options:
-      - label: 🛠️ Desarrollo - nueva funcionalidad o cambio en el código
-        value: new_feature
-      - label: 📄 Documentación - mejorar el README, guías, comentarios en código o ejemplos
-        value: documentation
-      - label: ♿ Accesibilidad - mejorar la experiencia para personas con discapacidad
-        value: accessibility
-      - label: ⚡ Rendimiento - optimización de velocidad, uso de memoria o recursos
-        value: performance
-      - label: 🎨 UI / UX - cambios en la interfaz o experiencia de usuario
-        value: ui_ux
-      - label: 🧪 Testing - agregar o mejorar pruebas automatizadas
-        value: testing
-      - label: 🔧 Infraestructura / DevOps - CI/CD, despliegue, configuración de entornos
-        value: devops
-      - label: 📚 Contenido - mejoras o correcciones en el contenido, como blogs, tutoriales o recursos educativos
-        value: content
+      options:
+        - label: 🛠️ Desarrollo - nueva funcionalidad o cambio en el código
+          value: new_feature
+        - label: 📄 Documentación - mejorar el README, guías, comentarios en código o ejemplos
+          value: documentation
+        - label: ♿ Accesibilidad - mejorar la experiencia para personas con discapacidad
+          value: accessibility
+        - label: ⚡ Rendimiento - optimización de velocidad, uso de memoria o recursos
+          value: performance
+        - label: 🎨 UI / UX - cambios en la interfaz o experiencia de usuario
+          value: ui_ux
+        - label: 🧪 Testing - agregar o mejorar pruebas automatizadas
+          value: testing
+        - label: 🔧 Infraestructura / DevOps - CI/CD, despliegue, configuración de entornos
+          value: devops
+        - label: 📚 Contenido - mejoras o correcciones en el contenido, como blogs, tutoriales o recursos educativos
+          value: content
     validations:
       required: true
 
