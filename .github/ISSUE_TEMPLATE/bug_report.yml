@@ -19,7 +19,7 @@ body:
         ⚠️ **Problemas de seguridad no deben reportarse aquí.**  
         Envíalos a: **hello@pylapaz.org**
 
-  - type: checkboxes
+  - type: checkbox
     id: checks
     attributes:
       label: 🔍 Verificaciones previas
