@@ -19,6 +19,14 @@ body:
         ⚠️ **Problemas de seguridad no deben reportarse aquí.**  
         Envíalos a: **hello@pylapaz.org**
 
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 🔍 Verificaciones previas
+      options:
+        - label: Busqué issues existentes y no encontré uno similar
+          required: true
+
   - type: dropdown
     id: severity
     attributes:

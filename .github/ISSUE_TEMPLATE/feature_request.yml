@@ -2,7 +2,7 @@ name: "✨ Feature request"
 description: Proponer una mejora o nueva funcionalidad
 title: "[FEATURE] Aquí un título descriptivo"
 labels:
-  - feature
+  - enhancement
 
 body:
   - type: markdown
@@ -13,18 +13,26 @@ body:
         Antes de abrir este Issue, por favor verifica:
 
         - 🔍 Buscaste si ya existe un issue similar (abierto o cerrado)
-        - 🔄 Estás usando la versión más reciente del proyecto
-        - 🔁 El problema es reproducible
+        - 🎯 Describe claramente el problema que quieres resolver
+        - 💡 Propón una solución concreta si es posible
 
         ⚠️ **Problemas de seguridad no deben reportarse aquí.**  
         Envíalos a: **hello@pylapaz.org**
 
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 🔍 Verificaciones previas
+      options:
+        - label: Busqué issues existentes y no encontré uno similar
+          required: true
+
   - type: checkbox
-    id: catergory
+    id: category
     attributes:
       label: 🧩 Tipo de mejora
       description: |
-        Marca con una X la categoría que mejor describe tu propuesta. 
+        Marca con la categoría que mejor describe tu propuesta. 
         Puedes marcar más de una.
     options:
       - label: 🛠️ Desarrollo - nueva funcionalidad o cambio en el código
@@ -59,3 +67,96 @@ body:
         propongo agregar un tutorial interactivo que guíe a los usuarios paso a paso.
     validations:
       required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 🎯 Problema que resuelve
+      description: |
+        Explica qué problema estás intentando resolver. 
+        ¿Qué dificultades enfrentan los usuarios o el proyecto sin esta mejora?
+      placeholder: |
+        Ejemplo: A veces es difícil ___ porque ___, lo que causa ___ y dificulta ___.
+    validations:
+      required: true
+
+  - type: textarea
+    id: use_case
+    attributes:
+      label: 👤 Caso de uso
+      description: Describe en qué situación se usaría esta funcionalidad
+      placeholder: |
+        Ejemplo:
+        Como organizador quiero exportar la lista de participantes
+        para procesarla en una hoja de cálculo.
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 💡 Solución propuesta
+      description: |
+        Describe cómo imaginas que podría implementarse la solución.
+        ¿Cómo implementaría esta mejora? ¿Qué cambios serían necesarios?
+      placeholder: |
+        Ejemplo: Mi propuesta es implementar ___ utilizando ___, 
+        lo que permitiría ___ y mejoraría ___.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: 🚀 Impacto esperado
+      description: |
+        ¿A quién beneficia este cambio y cómo?
+      placeholder: |
+        Ejemplo: Esta mejora permitiría ___, lo que resultaría en ___ y mejoraría ___.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🔍 Alternativas consideradas
+      description: |
+        ¿Evaluaste otras formas de resolver esto?
+        ¿Por qué esta solución es mejor que las alternativas
+      placeholder: |
+        Ejemplo: Consideré ___, pero lo descarté porque ___.
+    validations:
+      required: true
+
+  - type: textarea
+    id: criteria
+    attributes:
+      label: ✅ Criterios de aceptación
+      description: |
+        ¿Cómo sabríamos que esta mejora está completa y funciona bien?
+        Escribe los criterios en forma de lista.
+      placeholder: |
+        Ejemplo:
+        - El usuario puede hacer X sin necesidad de Y
+        - El tiempo de respuesta no supera Z ms
+        - Existe documentación actualizada
+    validations:
+      required: true
+
+  - type: dropdown
+    id: contribute
+    attributes:
+      label: 🤝 ¿Te gustaría contribuir con esto?
+      options:
+        - label: Sí, puedo abrir un PR con esta mejora
+        - label: Puedo ayudar a probarlo o revisarlo
+        - label: Puedo ayudar a documentarlo
+        - label: Por ahora solo propongo la idea
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: 📎 Recursos adicionales
+      description: |
+        Capturas de pantalla, mockups, links de referencia, issues relacionados (#número) 
+        o cualquier cosa que ayude a entender mejor la propuesta.
