@@ -56,8 +56,7 @@ body:
         Explica el problema actual y cómo tu propuesta lo soluciona o mejora.
       placeholder: |
         Ejemplo:
-        Actualmente el proceso de registro es confuso para nuevos usuarios, 
-        propongo agregar un tutorial interactivo que guíe a los usuarios paso a paso.
+        Actualmente el proceso de registro es confuso para nuevos usuarios, propongo agregar un tutorial interactivo que guíe a los usuarios paso a paso.
     validations:
       required: true
 
@@ -80,8 +79,7 @@ body:
       description: Describe en qué situación se usaría esta funcionalidad
       placeholder: |
         Ejemplo:
-        Como organizador quiero exportar la lista de participantes
-        para procesarla en una hoja de cálculo.
+        Como organizador quiero exportar la lista de participantes para procesarla en una hoja de cálculo.
 
   - type: textarea
     id: solution
@@ -91,8 +89,7 @@ body:
         Describe cómo imaginas que podría implementarse la solución.
         ¿Cómo implementaría esta mejora? ¿Qué cambios serían necesarios?
       placeholder: |
-        Ejemplo: Mi propuesta es implementar ___ utilizando ___, 
-        lo que permitiría ___ y mejoraría ___.
+        Ejemplo: Mi propuesta es implementar ___ utilizando ___, lo que permitiría ___ y mejoraría ___.
     validations:
       required: true
 
@@ -139,10 +136,10 @@ body:
     attributes:
       label: 🤝 ¿Te gustaría contribuir con esto?
       options:
-        - label: Sí, puedo abrir un PR con esta mejora
-        - label: Puedo ayudar a probarlo o revisarlo
-        - label: Puedo ayudar a documentarlo
-        - label: Por ahora solo propongo la idea
+        - Sí, puedo abrir un PR con esta mejora
+        - Puedo ayudar a probarlo o revisarlo
+        - Puedo ayudar a documentarlo
+        - Por ahora solo propongo la idea
     validations:
       required: true
 
